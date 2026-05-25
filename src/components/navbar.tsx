@@ -2,21 +2,19 @@ import { Box, Button, ButtonGroup, Flex, Heading } from "@chakra-ui/react";
 import React from "react";
 
 export default function Navbar() {
-    
+
     const [selected, setSelected] = React.useState("home");
-    const handleClick = (option: string) => {
-        setSelected(option);
-    }
+    const handleClick = (option: string) => setSelected(option);
 
     return (
         <Flex
             as="nav"
+            className="glass"
             justifyContent="space-between"
             alignItems="center"
             justifyItems="center"
             width="50%"
             margin="10px auto"
-            backgroundColor="gray.100"
             padding="1rem"
         >
             <Box>
